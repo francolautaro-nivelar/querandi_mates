@@ -142,7 +142,7 @@ export default async function Home() {
           <div className="max-w-7xl mx-auto px-6">
             <h3 className="text-center text-sm font-bold uppercase tracking-widest text-gray-400 mb-12">Empresas que confían en nosotros</h3>
             <div className="relative overflow-hidden before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-20 before:bg-gradient-to-r before:from-white before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-20 after:bg-gradient-to-l after:after:from-white after:to-transparent">
-              <div className="flex animate-infinite-scroll w-max gap-16 items-center grayscale opacity-50">
+              <div className="flex animate-infinite-scroll w-max gap-16 items-center">
                 {marcasLoop.map((marca, i) => (
                   <div key={i} className="flex-none px-8">
                     <img src={marca.image} alt={marca.name} className="h-10 w-auto object-contain" />

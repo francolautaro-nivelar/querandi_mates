@@ -22,7 +22,7 @@ export default function Sidebar() {
         <>
             {/* Mobile top bar */}
             <div className="md:hidden fixed top-0 left-0 right-0 h-16 bg-[#1A1A1A] text-white flex items-center justify-between px-4 z-30">
-                <img src="/logo_querandi.png" alt="Querandi Admin" className="h-9 brightness-0 invert" />
+                <img src="/logo_querandi.png" alt="Querandi Admin" className="h-9 rounded-full" />
                 <button onClick={() => setOpen(true)} aria-label="Abrir menú" className="p-2 -mr-2 text-white">
                     <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -46,7 +46,7 @@ export default function Sidebar() {
             >
                 <div className="mb-10 px-2">
                     <div className="flex items-center justify-between">
-                        <img src="/logo_querandi.png" alt="Querandi Admin" className="h-16 brightness-0 invert" />
+                        <img src="/logo_querandi.png" alt="Querandi Admin" className="h-16 rounded-full" />
                         <button onClick={() => setOpen(false)} aria-label="Cerrar menú" className="md:hidden text-gray-400 hover:text-white p-2">
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />

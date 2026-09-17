@@ -1,0 +1,59 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# assets/scripts from the pre-Next.js static site and raw photo dumps —
+# kept on disk for reference, not needed to build or deploy the app
+/legacy_landing/
+/fotosnuevas/
+/fotosnuevas2/
+/LogosQuerandiClientes/
+/images/
+/index.html
+/styles.css
+/script.js
+/querandi_mates_deploy.zip
+*.py
+/Inspiracion_1.png
+/Inspiracion_2.png
+/Mate_Torpedo_black.jpeg
+/comboblackquerandi.jpeg
+/Logo_Querandi.png

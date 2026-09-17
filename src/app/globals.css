@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #8B5A2B;
+  --color-primary-dark: #6B4423;
+  --color-primary-light: #A67C52;
+  --color-dark: #1A1A1A;
+  --color-dark-soft: #2D2D2D;
+  --color-gray: #4A4A4A;
+  --color-cream: #FAF7F2;
+  --color-cream-dark: #F0EBE3;
+  --color-gold: #C9A962;
+
+  --font-inter: var(--font-inter);
+  --font-playfair: var(--font-playfair);
+
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  --animation-infinite-scroll: infinite-scroll 30s linear infinite;
+}
+
+:root {
+  --color-primary: #8B5A2B;
+  --color-primary-dark: #6B4423;
+  --color-primary-light: #A67C52;
+  --color-dark: #1A1A1A;
+  --color-dark-soft: #2D2D2D;
+  --color-gray: #4A4A4A;
+  --color-cream: #FAF7F2;
+  --color-cream-dark: #F0EBE3;
+  --color-gold: #C9A962;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-heading {
+  font-family: var(--font-playfair), serif;
+}
+
+@layer components {
+  .section-badge {
+    @apply inline-block px-4 py-1 rounded-full text-sm font-medium uppercase tracking-wider mb-4 border border-[#8B5A2B]/20 bg-[#8B5A2B]/10 text-[#8B5A2B];
+  }
+}
